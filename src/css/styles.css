@@ -38,12 +38,24 @@
   padding: 0;
 }
 
+:root {
+  /* Background colors */
+  --main-bg-color: #fbfbfb;
+  --primary-bg-color: #54b4d3;
+
+  /* Text colors */
+  --main-color: #332d2d;
+  --primary-color: #ffffff;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Open Sans", Arial, Verdana, Helvetica, sans-serif;
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
   margin: 0;
   padding: 0;
 }

@@ -104,6 +104,59 @@ ul {
   display: block;
 }
 
+/* About Me section */
+.about-image {
+  position: relative;
+  text-align: center;
+  align-self: start;
+}
+
+.about-image img {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.about-image .title {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+
+.about-text .card {
+  color: var(--main-color);
+}
+
+.about-text .card-title {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.about-text .card-text {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 400;
+  margin: 0 0 0.5rem;
+}
+
+.about-text .card-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+.about-text .card-link .card-icon {
+  color: var(--main-color);
+}
+
 /* Medium devices */
 @media (min-width: 768px) {
   .container {
@@ -119,6 +172,16 @@ ul {
   .my-work .grid,
   .contact .grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .about-text .card {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+  }
+
+  .about-text .card-links {
+    justify-content: end;
   }
 }
 

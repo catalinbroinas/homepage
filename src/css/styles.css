@@ -48,6 +48,18 @@
   /* Text colors */
   --main-color: #332d2d;
   --primary-color: #ffffff;
+
+  /* Container padding */
+  --container-padding-sm: 1.5rem;
+  --container-padding-md: 2rem;
+  --container-padding-lg: 2.5rem;
+  --container-padding-xl: 3rem;
+
+  /* Section margin bottom */
+  --section-spacing-sm: 2rem;
+  --section-spacing-md: 3rem;
+  --section-spacing-lg: 4rem;
+  --section-spacing-xl: 5rem;
 }
 
 html {
@@ -65,4 +77,75 @@ body {
 ul {
   list-style: none;
   padding-left: 0;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  padding: 0 var(--container-padding-sm);
+  margin: 0 auto;
+}
+
+.about-me,
+.my-work {
+  margin-bottom: var(--section-spacing-sm);
+}
+
+.about-me .grid,
+.my-work .grid,
+.contact .grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.image-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Medium devices */
+@media (min-width: 768px) {
+  .container {
+    padding: 0 var(--container-padding-md);
+  }
+
+  .about-me,
+  .my-work {
+    margin-bottom: var(--section-spacing-md);
+  }
+
+  .about-me .grid,
+  .my-work .grid,
+  .contact .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+  .container {
+    padding: 0 var(--container-padding-lg);
+  }
+
+  .about-me,
+  .my-work {
+    margin-bottom: var(--section-spacing-lg);
+  }
+
+  .my-work .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Extra large devices */
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 var(--container-padding-xl);
+  }
+
+  .about-me,
+  .my-work {
+    margin-bottom: var(--section-spacing-xl);
+  }
 }

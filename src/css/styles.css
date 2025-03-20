@@ -109,6 +109,16 @@ ul {
 }
 
 /* About Me section */
+.about-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  transform: scale(-1, 1);
+}
+
 .about-image {
   position: relative;
   text-align: center;
@@ -134,6 +144,7 @@ ul {
 }
 
 .about-text .card {
+  background-color: var(--main-bg-color);
   color: var(--main-color);
 }
 

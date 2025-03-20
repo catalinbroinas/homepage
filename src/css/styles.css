@@ -188,6 +188,59 @@ ul {
   color: var(--primary-bg-color);
 }
 
+/* My Work section */
+.my-work .title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.project-card {
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card .image-fluid {
+  border-radius: 8px 8px 0 0;
+}
+
+.project-card .card-header {
+  padding: 1rem 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-card .card-body {
+  padding: 1rem 2rem 2rem;
+}
+
+.project-card .card-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.project-card .card-links {
+  font-size: 1.35rem;
+}
+
+.project-card .card-link {
+  margin-left: 0.75rem;
+  color: var(--main-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.project-card .card-link:hover,
+.project-card .card-link:active {
+  color: var(--primary-bg-color);
+}
+
+.project-card .card-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
 /* Medium devices */
 @media (min-width: 768px) {
   .container {
@@ -254,5 +307,9 @@ ul {
   .about-text .card-title,
   .about-text .card-text {
     margin-bottom: 1rem;
+  }
+
+  .my-work .title {
+    margin-bottom: 2rem;
   }
 }

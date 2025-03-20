@@ -82,7 +82,7 @@ ul {
 /* Layout */
 .container {
   max-width: 1200px;
-  padding: 0 var(--container-padding-sm);
+  padding: var(--container-padding-sm);
   margin: 0 auto;
 }
 
@@ -95,7 +95,11 @@ ul {
 .my-work .grid,
 .contact .grid {
   display: grid;
-  gap: 1.5rem;
+}
+
+.my-work .grid,
+.contact .grid {
+  gap: 2rem;
 }
 
 .image-fluid {
@@ -109,6 +113,7 @@ ul {
   position: relative;
   text-align: center;
   align-self: start;
+  margin-bottom: 1rem;
 }
 
 .about-image img {
@@ -160,7 +165,7 @@ ul {
 /* Medium devices */
 @media (min-width: 768px) {
   .container {
-    padding: 0 var(--container-padding-md);
+    padding: var(--container-padding-md);
   }
 
   .about-me,
@@ -172,6 +177,10 @@ ul {
   .my-work .grid,
   .contact .grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .about-image {
+    margin-bottom: 0;
   }
 
   .about-text .card {
@@ -188,7 +197,7 @@ ul {
 /* Large devices */
 @media (min-width: 992px) {
   .container {
-    padding: 0 var(--container-padding-lg);
+    padding: var(--container-padding-lg);
   }
 
   .about-me,
@@ -204,7 +213,7 @@ ul {
 /* Extra large devices */
 @media (min-width: 1200px) {
   .container {
-    padding: 0 var(--container-padding-xl);
+    padding: var(--container-padding-xl);
   }
 
   .about-me,

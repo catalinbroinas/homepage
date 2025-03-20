@@ -271,6 +271,28 @@ ul {
   margin-right: 0.75rem;
 }
 
+.contact-text .contact-email {
+  margin-bottom: 1rem;
+}
+
+.contact-text .card-links {
+  font-size: 2rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-text .card-link {
+  color: var(--main-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-text .card-link:hover,
+.contact-text .card-link:active {
+  color: var(--primary-color);
+}
+
 .contact-image img {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;

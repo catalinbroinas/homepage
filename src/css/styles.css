@@ -379,6 +379,11 @@ ul {
 
   .my-work .grid {
     grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem 2rem;
+  }
+
+  .my-work .title {
+    margin-bottom: 2rem;
   }
 }
 
@@ -396,9 +401,5 @@ ul {
   .about-text .card-title,
   .about-text .card-text {
     margin-bottom: 1rem;
-  }
-
-  .my-work .title {
-    margin-bottom: 2rem;
   }
 }

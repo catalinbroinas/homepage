@@ -225,10 +225,13 @@ ul {
 
 .project-card .card-links {
   font-size: 1.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-left: 0.75rem;
 }
 
 .project-card .card-link {
-  margin-left: 0.75rem;
   color: var(--main-color);
   transition: color 0.3s ease-in-out;
 }

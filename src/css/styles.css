@@ -267,22 +267,35 @@ ul {
 .contact-text .text {
   font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
 }
 
-.contact-text address.text {
+.contact-text p.text {
   margin-bottom: 0.75rem;
 }
 
-.contact-text .contact-icon {
-  margin-right: 0.75rem;
-}
-
-.contact-text .contact-email {
+.contact-text .address {
   margin-bottom: 1rem;
 }
 
-.contact-text .card-links {
+.contact-text p.contact-item {
+  margin-bottom: 0.5rem;
+}
+
+.contact-text .contact-item a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.contact-text .contact-item a:hover,
+.contact-text .contact-item a:active {
+  text-decoration: underline;
+}
+
+.contact-text .contact-item .contact-icon {
+  margin-right: 0.75rem;
+}
+
+.contact-text .contact-links {
   font-size: 2.5rem;
   display: flex;
   justify-content: start;
